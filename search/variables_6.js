@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['val_64',['val',['../structconsegna2__DennisTurco_1_1node.html#a9e7e6c047a1d5478e797fd1eb4936d3d',1,'consegna2_DennisTurco::node']]]
+  ['output_5fgraph_90',['output_graph',['../classconsegna2__DennisTurco.html#a89c597206399cd66d8252adb2b9bcd2d',1,'consegna2_DennisTurco::output_graph()'],['../classconsegna3__DennisTurco.html#a3cc27c7cb5604dce281bd32abd781b1f',1,'consegna3_DennisTurco::output_graph()']]]
 ];
