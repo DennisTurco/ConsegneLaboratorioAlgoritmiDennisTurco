@@ -23,6 +23,9 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Consegne DennisTurco", "index.html", [
+    [ "Documentazione Consegne Laboratorio Algoritmi e Strutture Dati", "index.html", [
+      [ "Consegne", "index.html#Consegne", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

@@ -29,7 +29,7 @@
    <div id="projectname">Consegne DennisTurco
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   <div id="projectbrief">Questa documentazione doxygen contiene una descrizione dei metodi usati e la motivazione di alcune scelte implementative per le consegne 1,2,3,4,5,6 del corso di Laboratorio di Algoritmi.</div>
+   <div id="projectbrief">Questa documentazione doxygen contiene una descrizione dei metodi usati e la motivazione di alcune scelte implementative per le consegne 1,2,3,4,5,6 del corso di Laboratorio di Algoritmi e Strutture Dati.</div>
   </td>
  </tr>
  </tbody>
@@ -167,7 +167,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 <div class="textblock"><p>consegna1 per il corso "Laboratorio di Algoritmi". </p>
 <dl class="section author"><dt>Author</dt><dd>DENNIS TURCO </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 <div class="fragment"></div><!-- fragment --> <em> consegna1_DennisTurco.c </em></dd></dl>
-<p>compilazione: g++ -xc++ consegna1_DennisTurco.c run: ./a.out</p>
+<p>compilazione: g++ -xc++ consegna1_DennisTurco.c<br  />
+ run: ./a.out</p>
 <p>Il programma carica il file data.txt contenente 107 righe con i dati di contagi covid per provincia. In <a class="el" href="output_8h_source.html">output.h</a> viene mostrato il numero di accessi in read alla memoria per eseguire il sorting di ciascuna riga.</p>
 <dl class="section note"><dt>Note</dt><dd>Obiettivo: Creare un algoritmo di sorting che minimizzi la somma del numero di accessi per ogni sorting di ciascuna riga del file. Le informazioni riguardanti il numero di accessi e' possibile consultarle nel file <a class="el" href="output_8h_source.html">output.h</a> <center><br  />
 <b>Grafico valori di input:</b><br  />
@@ -214,7 +215,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 </div><div class="memdoc">
 
 <p><em> Algoritmo di sorting "CountingSort". </em> </p>
-<p>utilizzo l'algoritmo di CountingSort per ordinare solo gli elementicompresi fra 0 e pivot, e quidi in un intervallo di valori "abbastanza" bassi, pertanto mi aspetto di ottenere un costo computazionale inferiore di quello di QuickSort all'interno di questo intervallo. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>utilizzo l'algoritmo di CountingSort per ordinare solo gli elementicompresi fra 0 e pivot, e quidi in un intervallo di valori "abbastanza" bassi, pertanto mi aspetto di ottenere un costo computazionale inferiore di quello di QuickSort all'interno di questo intervallo.<br  />
+ -&gt; <a href="https://visualgo.net/en/sorting?slide=15">ALGORITMO ONLINE SU "VISUALGO" </a> &lt;- </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">A</td><td>array contenenti i valori [0, pivot]; </td></tr>
     <tr><td class="paramname">index</td><td>dimensione di A; </td></tr>
@@ -261,7 +263,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 </div><div class="memdoc">
 
 <p><em> Algoritmo di sorting "InsertionSort" </em> </p>
-<p>utilizzo l'algoritmo di InsertionSort per ordinare solo gli elementi negativi, poco numerosi e parzialmente ordinati, quindi non mi aspetto di rientrare nel caso peggiore del costo computazionale dell'algoritmo (che sarebbe Θ(n²)), ma di ottenere un costo computazionale di circa O(n). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>utilizzo l'algoritmo di InsertionSort per ordinare solo gli elementi negativi, poco numerosi e parzialmente ordinati, quindi non mi aspetto di rientrare nel caso peggiore del costo computazionale dell'algoritmo (che sarebbe Θ(n²)), ma di ottenere un costo computazionale di circa O(n). <br  />
+ -&gt; <a href="https://visualgo.net/en/sorting">ALGORITMO ONLINE SU "VISUALGO" </a> &lt;- </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">A1</td><td>array contenete valori negativi; </td></tr>
     <tr><td class="paramname">index1</td><td>mantine traccia della dimensione dell'array A1; </td></tr>
@@ -447,7 +450,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
 </div><div class="memdoc">
 
 <p><em> Algoritmo di sorting "QuickSort" </em> </p>
-<p>utilizzo l'algoritmo di QuickSort per ordinare solo gli elementi maggiori (strettamente) del pivot, posizionati in maniera "disordinata" quindi non sono ordinati (o parzialmente ordinati) ne in modo crescente ne in modo decrescente, quindi mi aspetto di ottenere un costo computazionale di circa Θ(n(log(n))). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>utilizzo l'algoritmo di QuickSort per ordinare solo gli elementi maggiori (strettamente) del pivot, posizionati in maniera "disordinata" quindi non sono ordinati (o parzialmente ordinati) ne in modo crescente ne in modo decrescente, quindi mi aspetto di ottenere un costo computazionale di circa Θ(n(log(n))).<br  />
+ -&gt; <a href="https://visualgo.net/en/sorting?slide=12">ALGORITMO ONLINE SU "VISUALGO" </a> &lt;- </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">A3</td><td>array contenenti i valori (pivot, +inf); </td></tr>
     <tr><td class="paramname">p</td><td>indice di inizio array; </td></tr>
