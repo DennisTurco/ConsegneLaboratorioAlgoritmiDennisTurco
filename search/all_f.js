@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tree_5finsert_5fchild_5fl_43',['tree_insert_child_L',['../classconsegna2__DennisTurco.html#a0a2ea687686f0c1d2363fbc22b3d903f',1,'consegna2_DennisTurco']]],
-  ['tree_5finsert_5fchild_5fr_44',['tree_insert_child_R',['../classconsegna2__DennisTurco.html#ad003fa199f9f406b507fb35ffb4e3c69',1,'consegna2_DennisTurco']]],
-  ['tree_5fprint_5fgraph_45',['tree_print_graph',['../classconsegna2__DennisTurco.html#a7d6bcb9a1e488ea019cd29151e383981',1,'consegna2_DennisTurco::tree_print_graph()'],['../classconsegna3__DennisTurco.html#a89086d5611df706dde97db42c9dd61b6',1,'consegna3_DennisTurco::tree_print_graph()']]]
+  ['sistema_5frelazione_5fcon_5fgenitori_43',['sistema_relazione_con_genitori',['../classconsegna3__DennisTurco.html#ac33a41e9f64ae76350ce434d3b4159cb',1,'consegna3_DennisTurco']]],
+  ['sort_44',['sort',['../classconsegna3__DennisTurco.html#a2e9b3e4fb6ff8e252d15bc88f3360e19',1,'consegna3_DennisTurco']]],
+  ['split_45',['split',['../classconsegna1__DennisTurco.html#af20ae7ecd8827f0dece9430bfe361cd9',1,'consegna1_DennisTurco']]],
+  ['swap_46',['swap',['../classconsegna1__DennisTurco.html#a9f974b4cf289e804f47d06e60965270f',1,'consegna1_DennisTurco']]]
 ];
