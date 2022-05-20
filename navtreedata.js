@@ -24,7 +24,15 @@ var NAVTREE =
 [
   [ "Consegne DennisTurco", "index.html", [
     [ "Documentazione Consegne Laboratorio Algoritmi e Strutture Dati", "index.html", [
-      [ "Consegne", "index.html#Consegne", null ]
+      [ "Introduzione", "index.html#Introduzione", null ],
+      [ "Consegne", "index.html#Consegne", [
+        [ "Consegna1", "index.html#Consegna1", null ],
+        [ "Consegna2", "index.html#Consegna2", null ],
+        [ "Consegna3", "index.html#Consegna3", null ],
+        [ "Consegna4", "index.html#Consegna4", null ],
+        [ "Consegna5", "index.html#Consegna5", null ],
+        [ "Consegna6", "index.html#Consegna6", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
