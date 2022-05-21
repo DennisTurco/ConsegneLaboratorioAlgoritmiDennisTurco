@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['global_5fptr_5fref_13',['global_ptr_ref',['../classconsegna2__DennisTurco.html#af2a4111a321b5076bdd92ce474849489',1,'consegna2_DennisTurco']]]
+  ['get_5faddress_13',['get_address',['../classconsegna2__DennisTurco.html#a66354c04ced8f19c72dcddb9297a528c',1,'consegna2_DennisTurco']]],
+  ['global_5fptr_5fref_14',['global_ptr_ref',['../classconsegna2__DennisTurco.html#af2a4111a321b5076bdd92ce474849489',1,'consegna2_DennisTurco']]]
 ];

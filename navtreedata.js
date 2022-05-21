@@ -22,7 +22,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Consegne DennisTurco", "index.html", [
+  [ "Consegne Dennis Turco", "index.html", [
     [ "Documentazione Consegne Laboratorio Algoritmi e Strutture Dati", "index.html", [
       [ "Introduzione", "index.html#Introduzione", null ],
       [ "Consegne", "index.html#Consegne", [

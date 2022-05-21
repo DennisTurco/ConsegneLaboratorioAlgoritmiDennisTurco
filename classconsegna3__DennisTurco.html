@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Consegne DennisTurco: consegna3_DennisTurco Class Reference</title>
+<title>Consegne Dennis Turco: consegna3_DennisTurco Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Consegne DennisTurco
+   <div id="projectname">Consegne Dennis Turco
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
@@ -236,6 +236,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </ul>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a25bd296bc6c2c2cc579e43405324808d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bd296bc6c2c2cc579e43405324808d">&#9670;&nbsp;</a></span>parent_idx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int consegna3_DennisTurco::parent_idx </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><em> indice genitore. </em> </p>
+<p>ritorno (n - 1) / 2 -&gt; cioe' l'indice del nodo padre, <br  />
+ altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>indice nodo corrente; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
 <a id="a583b8114f66dee580823f523e942472f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a583b8114f66dee580823f523e942472f">&#9670;&nbsp;</a></span>child_L_idx()</h2>
 
@@ -261,9 +297,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> indice figlio sinistra. </em> </p>
-<p>ritorno (n - 1) / 2, altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>ritorno 2 * n + 1 -&gt; cioe' l'indice del nodo figlio di sinistra, <br  />
+ altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>; </td></tr>
+    <tr><td class="paramname">n</td><td>indice nodo corrente; </td></tr>
   </table>
   </dd>
 </dl>
@@ -296,13 +333,143 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> indice figlio destra. </em> </p>
-<p>ritorno (n - 1) / 2, altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>ritorno 2 * n + 2-&gt; cioe' l'indice del nodo del figio di destra, <br  />
+ altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>; </td></tr>
+    <tr><td class="paramname">n</td><td>indice nodo corrente; </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a95ff531f09e86216f49cf534a4421077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ff531f09e86216f49cf534a4421077">&#9670;&nbsp;</a></span>is_leaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int consegna3_DennisTurco::is_leaf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><em> verifica se il nodo e' foglia. </em> </p>
+<p>restituisce 0 se il nodo in posizione n e' un nodo interno (almeno un figlio), altrimenti restituisce 1 se il nodo non ha figli (foglia). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>indice nodo corrente; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="ac33a41e9f64ae76350ce434d3b4159cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33a41e9f64ae76350ce434d3b4159cb">&#9670;&nbsp;</a></span>sistema_relazione_con_genitori()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void consegna3_DennisTurco::sistema_relazione_con_genitori </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>temp_val_i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>temp_val_p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><em> sitema l'heap. </em> </p>
+<p>permette di mantere la struttura del min heap attraverso opportune verifiche di confronto tra i valori delle chiavi dei nodi e se necessario swappa i valori fra loro fino ad ottenere un corretto min heap (ossia con il valore minore nella radice...). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>indice del nodo corrente; </td></tr>
+    <tr><td class="paramname">p</td><td>indice del nodo padre; </td></tr>
+    <tr><td class="paramname">temp_val_i</td><td>valore del nodo corrente; </td></tr>
+    <tr><td class="paramname">temp_val_p</td><td>valore del nodo padre; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4605d5ace2f29cf890284f018e061e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4605d5ace2f29cf890284f018e061e6d">&#9670;&nbsp;</a></span>heap_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void consegna3_DennisTurco::heap_insert </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><em> inserimento nell'heap. </em> </p>
+<p>inserisco il nuovo nodo con contenuto "elem", nell'ultima posizione. Questo comporta la possibilita' di dover sistemare l'heap, riordinandolo successivamente attraverso la funzione "sistema_relazione_con_genitori". </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elem</td><td>valore da inserire nell'heap; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -352,41 +519,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a id="a4605d5ace2f29cf890284f018e061e6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4605d5ace2f29cf890284f018e061e6d">&#9670;&nbsp;</a></span>heap_insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void consegna3_DennisTurco::heap_insert </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>elem</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><em> inserimento nell'heap. </em> </p>
-<p>inserisco il nuovo nodo con contenuto elem, nell'ultima posizione dell'array. Ovvero continuo a completare il livello corrente. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">elem</td><td>elemento da inserire nell'heap; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
 <a id="ae06f5bec1a8f2523b40026654e4ae80f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae06f5bec1a8f2523b40026654e4ae80f">&#9670;&nbsp;</a></span>heap_remove_min()</h2>
 
@@ -411,77 +543,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> rimuove il valore minimo dall'heap. </em> </p>
-<dl class="section return"><dt>Returns</dt><dd>int (valore minimo rimosso) </dd></dl>
-
-</div>
-</div>
-<a id="a95ff531f09e86216f49cf534a4421077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ff531f09e86216f49cf534a4421077">&#9670;&nbsp;</a></span>is_leaf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int consegna3_DennisTurco::is_leaf </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><em> verifica se il nodo e' foglia. </em> </p>
-<p>restituisce 0 se il nodo in posizione n e' un nodo interno (almeno un figlio), altrimenti restituisce 1 se il nodo non ha figli. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<a id="a25bd296bc6c2c2cc579e43405324808d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25bd296bc6c2c2cc579e43405324808d">&#9670;&nbsp;</a></span>parent_idx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int consegna3_DennisTurco::parent_idx </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><em> indice genitore. </em> </p>
-<p>ritorno (n - 1) / 2, altrimenti ritorno -1 per indicare un indice non esistente. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<p>siccome stiamo utilizzando un min heap, il valore minimo e' quello della radice, quindi l'idea e' quella di scambiare la radice con l'ultima foglia a destra. Fatto cio' si procede all'eliminazione della vecchia radice e si riordina il min heap (dopo lo scambia abbiamo un valore non minimo come nuova radice). </p><dl class="section return"><dt>Returns</dt><dd>int (valore minimo rimosso) </dd></dl>
 
 </div>
 </div>
@@ -591,65 +653,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a id="ac33a41e9f64ae76350ce434d3b4159cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac33a41e9f64ae76350ce434d3b4159cb">&#9670;&nbsp;</a></span>sistema_relazione_con_genitori()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void consegna3_DennisTurco::sistema_relazione_con_genitori </td>
-          <td>(</td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>temp_val_i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>temp_val_p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><em> sitema l'heap. </em> </p>
-<p>permette di mantere la struttura del min heap attraverso opportune verifiche di confronto tra i valori delle chiavi dei nodi e se necessario swappa i valori fra loro fino ad ottenere un corretto min heap (ossia con il valore minore nella radice...). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>indice del nodo corrente; </td></tr>
-    <tr><td class="paramname">p</td><td>indice del nodo padre; </td></tr>
-    <tr><td class="paramname">temp_val_i</td><td>valore del nodo corrente; </td></tr>
-    <tr><td class="paramname">temp_val_p</td><td>valore del nodo padre; </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a2e9b3e4fb6ff8e252d15bc88f3360e19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e9b3e4fb6ff8e252d15bc88f3360e19">&#9670;&nbsp;</a></span>sort()</h2>
 
@@ -685,7 +688,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> algoritmo per il sorting di un array di input. </em> </p>
-<p>algoritmo che esegue un ordinamento di un array di grandezza arbitraria, basato sul confronto attraverso un doppio ciclo. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>algoritmo che esegue un ordinamento di un array di grandezza arbitraria, basato sul confronto attraverso un doppio ciclo. Attenzione! attraverso questo algoritmo di sorting, non mi interessa essere efficiente (faccio molte letture in memoria), ma voglio semplicemente ottenere un algoritmo semplice da scrivere. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">A</td><td>array da ordinare; </td></tr>
     <tr><td class="paramname">dim</td><td>dimensione dell'array A; </td></tr>
