@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['l_94',['L',['../structconsegna2__DennisTurco_1_1node.html#ae19dc313a5b94119ac34f0b5fbd3af20',1,'consegna2_DennisTurco::node']]]
+  ['heap_5fsize_115',['heap_size',['../classconsegna3__DennisTurco.html#a4cc01b3aeabc5799920fef6b382da321',1,'consegna3_DennisTurco']]]
 ];

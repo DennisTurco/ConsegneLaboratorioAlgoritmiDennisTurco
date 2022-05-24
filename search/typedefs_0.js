@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node_5ft_104',['node_t',['../classconsegna2__DennisTurco.html#aaf254a55befa4afb02c9d25e830574cf',1,'consegna2_DennisTurco']]]
+  ['list_5ft_127',['list_t',['../classconsegna4__DennisTurco.html#a9076fa35647982b432ef817907fe64da',1,'consegna4_DennisTurco']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['merge_72',['merge',['../classconsegna1__DennisTurco.html#a76f57f57d0036a660d89d5c673d4ad0e',1,'consegna1_DennisTurco']]]
+  ['list_5fnew_88',['list_new',['../classconsegna4__DennisTurco.html#a92b6625b32a632ccfc3edce95f26232f',1,'consegna4_DennisTurco']]]
 ];
