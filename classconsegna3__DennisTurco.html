@@ -129,9 +129,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconsegna3__DennisTurco.html#a51451cb15cb488c3aacce34e16ee95b9">node_print</a> (int <a class="el" href="classconsegna3__DennisTurco.html#a86caaa38b0dfd9f953e9872f48d5d2a0">n</a>)</td></tr>
 <tr class="memdesc:a51451cb15cb488c3aacce34e16ee95b9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em> stampa nodi. </em> <br /></td></tr>
 <tr class="separator:a51451cb15cb488c3aacce34e16ee95b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33a41e9f64ae76350ce434d3b4159cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconsegna3__DennisTurco.html#ac33a41e9f64ae76350ce434d3b4159cb">sistema_relazione_con_genitori</a> (int &amp;i, int &amp;p, int &amp;temp_val_i, int &amp;temp_val_p)</td></tr>
-<tr class="memdesc:ac33a41e9f64ae76350ce434d3b4159cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em> sitema l'heap. </em>  <a href="classconsegna3__DennisTurco.html#ac33a41e9f64ae76350ce434d3b4159cb">More...</a><br /></td></tr>
-<tr class="separator:ac33a41e9f64ae76350ce434d3b4159cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6028e859b895bb587c6ca29d418f782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconsegna3__DennisTurco.html#ab6028e859b895bb587c6ca29d418f782">sistema_relazione_genitori</a> (int &amp;indice_i, int &amp;indice_p, int &amp;val_i, int &amp;val_p)</td></tr>
+<tr class="memdesc:ab6028e859b895bb587c6ca29d418f782"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em> sitema l'heap. </em>  <a href="classconsegna3__DennisTurco.html#ab6028e859b895bb587c6ca29d418f782">More...</a><br /></td></tr>
+<tr class="separator:ab6028e859b895bb587c6ca29d418f782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4605d5ace2f29cf890284f018e061e6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconsegna3__DennisTurco.html#a4605d5ace2f29cf890284f018e061e6d">heap_insert</a> (int elem)</td></tr>
 <tr class="memdesc:a4605d5ace2f29cf890284f018e061e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em> inserimento nell'heap. </em>  <a href="classconsegna3__DennisTurco.html#a4605d5ace2f29cf890284f018e061e6d">More...</a><br /></td></tr>
 <tr class="separator:a4605d5ace2f29cf890284f018e061e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -380,8 +380,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a id="ac33a41e9f64ae76350ce434d3b4159cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac33a41e9f64ae76350ce434d3b4159cb">&#9670;&nbsp;</a></span>sistema_relazione_con_genitori()</h2>
+<a id="ab6028e859b895bb587c6ca29d418f782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6028e859b895bb587c6ca29d418f782">&#9670;&nbsp;</a></span>sistema_relazione_genitori()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,28 +390,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void consegna3_DennisTurco::sistema_relazione_con_genitori </td>
+          <td class="memname">void consegna3_DennisTurco::sistema_relazione_genitori </td>
           <td>(</td>
           <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>indice_i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramname"><em>indice_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>temp_val_i</em>, </td>
+          <td class="paramname"><em>val_i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>temp_val_p</em>&#160;</td>
+          <td class="paramname"><em>val_p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -429,10 +429,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <p><em> sitema l'heap. </em> </p>
 <p>permette di mantere la struttura del min heap attraverso opportune verifiche di confronto tra i valori delle chiavi dei nodi e se necessario swappa i valori fra loro fino ad ottenere un corretto min heap (ossia con il valore minore nella radice...). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>indice del nodo corrente; </td></tr>
-    <tr><td class="paramname">p</td><td>indice del nodo padre; </td></tr>
-    <tr><td class="paramname">temp_val_i</td><td>valore del nodo corrente; </td></tr>
-    <tr><td class="paramname">temp_val_p</td><td>valore del nodo padre; </td></tr>
+    <tr><td class="paramname">indice_i</td><td>indice del nodo corrente; </td></tr>
+    <tr><td class="paramname">indice_p</td><td>indice del nodo padre; </td></tr>
+    <tr><td class="paramname">val_i</td><td>valore del nodo corrente; </td></tr>
+    <tr><td class="paramname">val_p</td><td>valore del nodo padre; </td></tr>
   </table>
   </dd>
 </dl>
@@ -464,7 +464,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> inserimento nell'heap. </em> </p>
-<p>inserisco il nuovo nodo con contenuto "elem", nell'ultima posizione. Questo comporta la possibilita' di dover sistemare l'heap, riordinandolo successivamente attraverso la funzione "sistema_relazione_con_genitori". </p><dl class="params"><dt>Parameters</dt><dd>
+<p>inserisco il nuovo nodo con contenuto "elem", nell'ultima posizione. Questo comporta la possibilita' di dover sistemare l'heap, riordinandolo successivamente attraverso la funzione "sistema_relazione_genitori". </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elem</td><td>valore da inserire nell'heap; </td></tr>
   </table>
@@ -509,7 +509,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 
 <p><em> diminuisce il valore di una chiave. </em> </p>
-<p>verifica se "key" e' minore del valore precendente nell'indice "indice_nodo" e se si inserisce il valore "key" nella posizione "indice_nodo" riordinando successivamente l'intero heap attraverso la funzione "sistema_relazione_con_genitori". </p><dl class="params"><dt>Parameters</dt><dd>
+<p>verifica se "key" e' minore del valore precendente nell'indice "indice_nodo" e se si inserisce il valore "key" nella posizione "indice_nodo" riordinando successivamente l'intero heap attraverso la funzione "sistema_relazione_genitori". </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">indice_nodo</td><td>valore dell'indice del nodo su cui operare; </td></tr>
     <tr><td class="paramname">key</td><td>valore della chiave da sostituire con il valore dell'"indice_nodo"; </td></tr>

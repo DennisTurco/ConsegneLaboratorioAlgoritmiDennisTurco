@@ -9,7 +9,7 @@ var classconsegna3__DennisTurco =
     [ "tree_print_rec_graph", "classconsegna3__DennisTurco.html#a4ae1001d57408d8ba65fcd71e70f61a5", null ],
     [ "tree_print_graph", "classconsegna3__DennisTurco.html#a89086d5611df706dde97db42c9dd61b6", null ],
     [ "node_print", "classconsegna3__DennisTurco.html#a51451cb15cb488c3aacce34e16ee95b9", null ],
-    [ "sistema_relazione_con_genitori", "classconsegna3__DennisTurco.html#ac33a41e9f64ae76350ce434d3b4159cb", null ],
+    [ "sistema_relazione_genitori", "classconsegna3__DennisTurco.html#ab6028e859b895bb587c6ca29d418f782", null ],
     [ "heap_insert", "classconsegna3__DennisTurco.html#a4605d5ace2f29cf890284f018e061e6d", null ],
     [ "decrese_key", "classconsegna3__DennisTurco.html#ade207173f20aaedf2237045b37a91228", null ],
     [ "heap_remove_min", "classconsegna3__DennisTurco.html#ae06f5bec1a8f2523b40026654e4ae80f", null ],
