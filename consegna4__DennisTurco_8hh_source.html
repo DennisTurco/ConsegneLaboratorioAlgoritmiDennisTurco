@@ -141,53 +141,52 @@ $(document).ready(function(){initNavTree('consegna4__DennisTurco_8hh_source.html
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Fine Definizione della struttura dati grafo</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#a9c7372b5861e9a04f50c785aea67a40e">   98</a></span>&#160;    <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *global_ptr_ref = NULL; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#a12ab8534b2522be4451d3156afccfaa8">  100</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classconsegna4__DennisTurco.html#a12ab8534b2522be4451d3156afccfaa8">get_address</a>(<span class="keywordtype">void</span> *<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node</a>){</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)((long)<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node</a> - (<span class="keywordtype">long</span>)global_ptr_ref);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">node_print</a>(<span class="keywordtype">int</span> n){</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; endl;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;[ shape = oval; &quot;</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (V_visitato[n])</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;fillcolor = red; style=filled; &quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;label = &quot;</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;\&quot;Idx: &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;, val: &quot;</span> &lt;&lt; V[n] &lt;&lt; <span class="stringliteral">&quot;\&quot; ];\n&quot;</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *elem = E[n]; <span class="comment">// passiamo il pointer di E a elem</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">while</span> (elem != NULL){ </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; elem-&gt;val &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; <span class="stringliteral">&quot; [  color=gray ]\n&quot;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            elem = elem-&gt;next;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">  127</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">node_print</a>(<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *l){</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        printf(<span class="stringliteral">&quot;Stampa lista\n&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (l == NULL){</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            printf(<span class="stringliteral">&quot;Lista vuota\n&quot;</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *current = l;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">while</span> (current != NULL){</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">if</span> (!details)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    printf(<span class="stringliteral">&quot;%d, &quot;</span>, current-&gt;val);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">else</span>{ </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    <span class="keywordflow">if</span> (current-&gt;next == NULL)</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                        printf(<span class="stringliteral">&quot;allocato in %d [Val: %d, Next: NULL]\n&quot;</span>, get_address(current), current-&gt;val);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        printf(<span class="stringliteral">&quot;allocato in %d [Val: %d, Next: %d]\n&quot;</span>, get_address(current), current-&gt;val, get_address(current-&gt;next));</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                current = current-&gt;next;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#a9c7372b5861e9a04f50c785aea67a40e">   99</a></span>&#160;    <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *global_ptr_ref = NULL; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> get_address(<span class="keywordtype">void</span> *<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node</a>){</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)((long)<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node</a> - (<span class="keywordtype">long</span>)global_ptr_ref);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">node_print</a>(<span class="keywordtype">int</span> n){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; endl;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;[ shape = oval; &quot;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (V_visitato[n])</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;fillcolor = red; style=filled; &quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        output_graph &lt;&lt; <span class="stringliteral">&quot;label = &quot;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;\&quot;Idx: &quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;, val: &quot;</span> &lt;&lt; V[n] &lt;&lt; <span class="stringliteral">&quot;\&quot; ];\n&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *elem = E[n]; <span class="comment">// passiamo il pointer di E a elem</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">while</span> (elem != NULL){ </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            output_graph &lt;&lt; <span class="stringliteral">&quot;node_&quot;</span> &lt;&lt; elem-&gt;val &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; n_operazione &lt;&lt; <span class="stringliteral">&quot; [  color=gray ]\n&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            elem = elem-&gt;next;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">  128</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">node_print</a>(<a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *l){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        printf(<span class="stringliteral">&quot;Stampa lista\n&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (l == NULL){</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            printf(<span class="stringliteral">&quot;Lista vuota\n&quot;</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="structconsegna4__DennisTurco_1_1node.html">node_t</a> *current = l;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">while</span> (current != NULL){</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">if</span> (!details)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    printf(<span class="stringliteral">&quot;%d, &quot;</span>, current-&gt;val);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">else</span>{ </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    <span class="keywordflow">if</span> (current-&gt;next == NULL)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                        printf(<span class="stringliteral">&quot;allocato in %d [Val: %d, Next: NULL]\n&quot;</span>, get_address(current), current-&gt;val);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                        printf(<span class="stringliteral">&quot;allocato in %d [Val: %d, Next: %d]\n&quot;</span>, get_address(current), current-&gt;val, get_address(current-&gt;next));</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                current = current-&gt;next;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> graph_print(){</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_nodi; i++)</div>
@@ -339,9 +338,9 @@ $(document).ready(function(){initNavTree('consegna4__DennisTurco_8hh_source.html
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                output_graph &lt;&lt; <span class="stringliteral">&quot;[color=red, label = \&quot;&quot;</span> &lt;&lt; ct_visit++ &lt;&lt; <span class="stringliteral">&quot;\&quot;]&quot;</span>;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            output_graph &lt;&lt; endl;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            DFS(elem-&gt;val);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            DFS(elem-&gt;val); <span class="comment">// eseguo ricorsivamente sul valore successivo</span></div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            elem = elem-&gt;next;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            elem = elem-&gt;next; <span class="comment">// mi sposto nei nodi</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
@@ -420,9 +419,9 @@ $(document).ready(function(){initNavTree('consegna4__DennisTurco_8hh_source.html
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">//      // inserimento dei nodi all&#39;interno della lista</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">//      // alla fine di questo ciclo otteniamo un grafo completo</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">//      for (int j = 0; j &lt; n_nodi-1; j++){</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">//      for (int j = 0; j &lt; n_nodi; j++){</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">//          // if (rand()%2==0)</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">//          if(i != j) //metto un arco solo se c&#39;e&#39;una relazione di minori</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">//          if(i &lt;= j) //metto un arco solo se c&#39;e&#39;una relazione di minori</span></div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">//              E[i] = node_insert_front(E[i], j);</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">//      }</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">//  }</span></div>
@@ -453,7 +452,7 @@ $(document).ready(function(){initNavTree('consegna4__DennisTurco_8hh_source.html
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">//      }</span></div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">//  }</span></div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">//  DFS(1); //visita DFS</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">//  DFS(1); //visita DFS // 1 mi rappresenta l&#39;indice di partenza della visita DFS</span></div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">//  if (graph){</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">//      /// preparo footer e chiudo file</span></div>
@@ -471,19 +470,18 @@ $(document).ready(function(){initNavTree('consegna4__DennisTurco_8hh_source.html
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_ad8fb5fb9f66234c51d4299e495fce27d"><div class="ttname"><a href="classconsegna4__DennisTurco.html#ad8fb5fb9f66234c51d4299e495fce27d">consegna4_DennisTurco::E</a></div><div class="ttdeci">node_t ** E</div><div class="ttdoc">crea matrice di adiacenza (rispetto alla versione originale ora non e' piu' un tipo list_t ma node_t ...</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:86</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a5bf9999e2fed314a99872721bbdde1c4"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a5bf9999e2fed314a99872721bbdde1c4">consegna4_DennisTurco::new_matrice_adiacenza</a></div><div class="ttdeci">int ** new_matrice_adiacenza()</div><div class="ttdoc">costruzione matrice di adiacenza.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:210</div></div>
 <div class="ttc" id="astructconsegna4__DennisTurco_1_1list_html"><div class="ttname"><a href="structconsegna4__DennisTurco_1_1list.html">consegna4_DennisTurco::list</a></div><div class="ttdoc">struct per la lista.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:67</div></div>
-<div class="ttc" id="aclassconsegna4__DennisTurco_html_ac369e14c97535e400b0a6c7ebcea9933"><div class="ttname"><a href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">consegna4_DennisTurco::node_print</a></div><div class="ttdeci">void node_print(node_t *l)</div><div class="ttdoc">stampa struttora nodi.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:127</div></div>
+<div class="ttc" id="aclassconsegna4__DennisTurco_html_ac369e14c97535e400b0a6c7ebcea9933"><div class="ttname"><a href="classconsegna4__DennisTurco.html#ac369e14c97535e400b0a6c7ebcea9933">consegna4_DennisTurco::node_print</a></div><div class="ttdeci">void node_print(node_t *l)</div><div class="ttdoc">stampa struttora nodi.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:128</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a259aa48672848c13c265efd4793089fe"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a259aa48672848c13c265efd4793089fe">consegna4_DennisTurco::parse_cmd</a></div><div class="ttdeci">int parse_cmd(int argc, char **argv)</div><div class="ttdoc">controllo argomenti.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:350</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a92b6625b32a632ccfc3edce95f26232f"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a92b6625b32a632ccfc3edce95f26232f">consegna4_DennisTurco::list_new</a></div><div class="ttdeci">list_t * list_new(void)</div><div class="ttdoc">crea una nuova lista.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:165</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_ad053b33068817728de58ee10eb36b56c"><div class="ttname"><a href="classconsegna4__DennisTurco.html#ad053b33068817728de58ee10eb36b56c">consegna4_DennisTurco::print_array</a></div><div class="ttdeci">void print_array(int *A, int dim)</div><div class="ttdoc">stampa l'array.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:258</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_abf793a55e430b40aa347063e15088741"><div class="ttname"><a href="classconsegna4__DennisTurco.html#abf793a55e430b40aa347063e15088741">consegna4_DennisTurco::DFS</a></div><div class="ttdeci">void DFS(int n)</div><div class="ttdoc">DFS (depth-first search) è un algoritmo di ricerca su alberi e grafi. A differenza della ricerca in a...</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:307</div></div>
-<div class="ttc" id="aclassconsegna4__DennisTurco_html_a2853a5e618d9b923d6c326cfa166a686"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">consegna4_DennisTurco::node_print</a></div><div class="ttdeci">void node_print(int n)</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:104</div></div>
+<div class="ttc" id="aclassconsegna4__DennisTurco_html_a2853a5e618d9b923d6c326cfa166a686"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a2853a5e618d9b923d6c326cfa166a686">consegna4_DennisTurco::node_print</a></div><div class="ttdeci">void node_print(int n)</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:105</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a1477b99f8f108ed215923343c9fb9377"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a1477b99f8f108ed215923343c9fb9377">consegna4_DennisTurco::node_insert_front</a></div><div class="ttdeci">node_t * node_insert_front(node_t *l, int elem)</div><div class="ttdoc">inserisce un elemento all'inizio della lista.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:246</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a766ce027358046427e19f334d4c15010"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a766ce027358046427e19f334d4c15010">consegna4_DennisTurco::swap</a></div><div class="ttdeci">void swap(int &amp;a, int &amp;b)</div><div class="ttdoc">Inverte 2 elementi fra di loro.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:341</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_af44e0816bbcbb14cbdf5da486dc5711a"><div class="ttname"><a href="classconsegna4__DennisTurco.html#af44e0816bbcbb14cbdf5da486dc5711a">consegna4_DennisTurco::output_graph</a></div><div class="ttdeci">ofstream output_graph</div><div class="ttdoc">file di output per grafo.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:50</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html"><div class="ttname"><a href="classconsegna4__DennisTurco.html">consegna4_DennisTurco</a></div><div class="ttdoc">consegna4 per il corso &quot;Laboratorio di Algoritmi&quot;.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:33</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_aba51d2358d777774266db9885e23cede"><div class="ttname"><a href="classconsegna4__DennisTurco.html#aba51d2358d777774266db9885e23cede">consegna4_DennisTurco::print_matrice_adiacenza</a></div><div class="ttdeci">void print_matrice_adiacenza(int **matrice_adiacenza)</div><div class="ttdoc">stampa matrice di adiacenza.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:200</div></div>
 <div class="ttc" id="astructconsegna4__DennisTurco_1_1node_html"><div class="ttname"><a href="structconsegna4__DennisTurco_1_1node.html">consegna4_DennisTurco::node</a></div><div class="ttdoc">Definizione della struttura dati lista.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:61</div></div>
-<div class="ttc" id="aclassconsegna4__DennisTurco_html_a12ab8534b2522be4451d3156afccfaa8"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a12ab8534b2522be4451d3156afccfaa8">consegna4_DennisTurco::get_address</a></div><div class="ttdeci">int get_address(void *node)</div><div class="ttdoc">usato per memorizzare il puntatore alla prima lista allocata</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:100</div></div>
 <div class="ttc" id="aclassconsegna4__DennisTurco_html_a4e0f9603f330bc6f7c89a1ed8e65a820"><div class="ttname"><a href="classconsegna4__DennisTurco.html#a4e0f9603f330bc6f7c89a1ed8e65a820">consegna4_DennisTurco::V</a></div><div class="ttdeci">int * V</div><div class="ttdoc">elenco dei nodi del grafo.</div><div class="ttdef"><b>Definition:</b> consegna4_DennisTurco.hh:81</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
