@@ -21,7 +21,7 @@ var classconsegna5__AntonioSantacroce__DennisTurco =
     [ "print_array", "classconsegna5__AntonioSantacroce__DennisTurco.html#a7e94cca984256761602057cf00804057", null ],
     [ "print_array_graph", "classconsegna5__AntonioSantacroce__DennisTurco.html#a7ae5283d9844e3f99fefad7100367535", null ],
     [ "shortest_path", "classconsegna5__AntonioSantacroce__DennisTurco.html#a2e0d846c4c1ea59b04823b1ec8b23cc1", null ],
-    [ "DFS", "classconsegna5__AntonioSantacroce__DennisTurco.html#a470d832e1c7080e87aee76d57801f577", null ],
+    [ "DFS", "classconsegna5__AntonioSantacroce__DennisTurco.html#a76d84bb7ab24bd6e5d389f535900e502", null ],
     [ "swap", "classconsegna5__AntonioSantacroce__DennisTurco.html#a1b3c6b029bd4a55c5fbe81d2cfc1e1d8", null ],
     [ "parse_cmd", "classconsegna5__AntonioSantacroce__DennisTurco.html#a905f28e9e3d6fdf7fc47d737deecc066", null ],
     [ "ct_swap", "classconsegna5__AntonioSantacroce__DennisTurco.html#a97b798081c2e695cb81ae1fcb608e815", null ],
