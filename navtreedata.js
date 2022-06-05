@@ -52,7 +52,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"structconsegna5__AntonioSantacroce__DennisTurco_1_1node.html#a64d0409b050e513ec79a0c8132266b5e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
